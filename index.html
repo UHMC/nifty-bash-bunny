@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="gr__" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Nifty Assignment - Bash Bunny | nifty-bash-bunny</title>
+<meta name="generator" content="Jekyll v3.7.4">
+<meta property="og:title" content="Nifty Assignment - Bash Bunny">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://uhmc.github.io/nifty-bash-bunny/">
+<meta property="og:url" content="https://uhmc.github.io/nifty-bash-bunny/">
+<meta property="og:site_name" content="nifty-bash-bunny">
+<script type="application/ld+json">
+{"headline":"Nifty Assignment - Bash Bunny","@type":"WebSite","url":"https://uhmc.github.io/nifty-bash-bunny/","name":"nifty-bash-bunny","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <style class="anchorjs">
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}
+
+
+
+
+
+    </style><link rel="stylesheet" href="./index_files/style.css">
+  </head>
+  <body data-gr-c-s-loaded="true">
+    <div class="container-lg px-3 my-5 markdown-body">
+
+      <h1><a href="https://uhmc.github.io/nifty-bash-bunny/">nifty-bash-bunny</a></h1>
+
+<h1 id="nifty-assignment---bash-bunny">Nifty Assignment - Bash Bunny</h1>
+
+<div id="toc_container">
+<p class="toc_title">Contents</p>
+<ul class="toc_list">
+  <li><a href="#background">Background</a></li>
+<li><a href="#meta-information">Meta Information</a></li>
+<li><a href="#additional-descriptions">Additional Descriptions</a></li>
+<li><a href="#target-audience">Target Audience</a></li>
+  <ul>
+    <li><a href="#os">Operating System</a></li>
+    <li><a href="#user">User</a></li>
+  </ul>
+<li><a href="#device">Device</a></li>
+  <ul>
+    <li><a href="#additional-notes">Additional Notes</a></li>
+  </ul>
+  <li><a href="#setup">Setup</a></li>
+    <ul>
+    <li><a href="#setup-update">Initial Setup & Update</a></li>
+    <li><a href="#version-varification">Version Verification</a></li>
+    <li><a href="#share-internet">Share Internet</a></li>
+    <li><a href="#install-utilities">Install Utilities (Optional)</a></li>
+    <li><a href="#download-putty">Download PuTTY (Optional)</a></li>
+    <li><a href="#connect-to-putty">Connect to Bash Bunny via PuTTY (Optional)</a></li>
+    </ul>
+  <li><a href="#assignment-instructions">Assignment Instructions</a></li>
+    <ul>
+    <li><a href="#assignment-instructions-copy-run-payload">Copy & Run Payload</a></li>
+    <li><a href="#assignment-instructions-edit-payload">Edit Payload</a></li>
+    </ul>
+  <li><a href="#payload-development">Payload Development (Optional)</a></li>
+  <li><a href="#starter-code">Starter Code</a></li>
+  <li><a href="#grading">Model Grading Criteria</a></li>
+  <li><a href="#additional-info">Additional Information</a></li>
+</ul>
+</div>
+
+
+<h2 id="background">Background<a class="anchorjs-link " href="https://uhmc.github.io/nifty-bash-bunny/#background" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>The Bash Bunny is a dynamic USB attack platform developed and distributed by Hak5. The Bash Bunny was released in 2017 with immense community support and payload development commenced shortly after release. The Bash Bunny was an expansion of the popular USB Rubber Ducky with greater functionality and can mimic trusted USB devices and execute preprogrammed attacks, so the offensive capabilities and applications vary. The Bash Bunny may be configured and reconfigured between a human interface device (HID) (think keyboard, similar to Rubber Ducky), ethernet adapter, or mass storage; as such, the device is dynamic and may be reconfigured to meet desired needs and systems.  </p>
+
+<h2 id="meta-information">Meta Information<a class="anchorjs-link " href="https://uhmc.github.io/nifty-bash-bunny/#meta-information" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Summary</td>
+      <td>Bash Bunny—Download and refine a Bash Bunny payload which is capable of exfiltrating specified file types from target destinations.   </td>
+    </tr>
+    <tr>
+      <td>Topics</td>
+      <td>Hak5, Bash Bunny, Exfiltration, Powershell  </td>
+    </tr>
+    <tr>
+      <td>Audience</td>
+      <td>Students who are familiar with Powershell and an interest in technology gadgets. This assignment, when expanded, may be an appropriate baseline for a high school student’s senior project. </td>
+    </tr>
+    <tr>
+      <td>Difficulty</td>
+      <td>While designed to be a simple assignment in practical application, the expansion of this assignment may encompass complex Powershell scripting, python coding, advanced frameworks such as Metasploit. A basic knowledge of Powershell will be helpful in starting out. If no prior experience, there will be a steep learning curve. </td>
+    </tr>
+    <tr>
+      <td>Strengths</td>
+      <td>Introduction to a modern technological gadget that will interest and engage students, teasing out thought and creativity throughout the project. </td>
+    </tr>
+    <tr>
+      <td>Weaknesses</td>
+      <td>May be difficult to grasp Powershell, Python, or other utilities such as Impacket or Responder without prior knowledge or experience. In the endeavor of improved performance, there should be a heavy reliance on independent research and effort to gain a functional knowledge of the potential utilities. </td>
+    </tr>
+    <tr>
+      <td>Dependencies</td>
+      <td>Bash Bunny, Internet Access  </td>
+    </tr>
+    <tr>
+      <td>Variants</td>
+      <td>Expansion of assignment to exfiltrate a wider variety of file types. Additionally, the focus may be expanded to more advanced payloads. </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="additional-descriptions">Additional Descriptions<a class="anchorjs-link " href="https://uhmc.github.io/nifty-bash-bunny/#additional-descriptions" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Assignment Description</td>
+      <td>This assignment is meant to be a hands-on example of practical application using a popular technological tool. </td>
+    </tr>
+    <tr>
+      <td>Structure Description</td>
+      <td>The assignment is structured to guide the student from the beginning in getting familiar with the tool while opening to allow creativity with the final deliverable. </td>
+    </tr>
+    <tr>
+      <td>How It Works Description</td>
+      <td>The Bash Bunny uses special but plain text syntax to perform actions through payloads. This assignment focuses on exfiltration of documents from a computer, a common objective in penetration testing. The assignment is meant to be introductory in nature but as the foundation for a much larger project.  </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="target-audience">Target Audience</h2>
+
+<h3 id="os">Operating System: Windows</h3>
+<p>	This primer paper on the Bash Bunny is written and intended for Windows machines, specifically Windows 10. Mac and Linux devices may have differing commands and verbiage that may confuse and impede would-be users from following this paper. For example, to share ethernet with the Bash Bunny the ATTACKMODE for Windows is RNDIS_ETHERNET; on Mac/Linux/Android devices the standard is ECM_ETHERNET. The ethernet configuration example above is just one of the many differences between device configuration; if on a device other than Windows this primer may still be read for concept even though many configuration settings will be different. </p>
+<h3 id="user">User: High School Seniors</h3>
+<p>	This primer paper is written and intended to introduce high school seniors to the Bash Bunny with the intention of being the basis of a Senior Project over the course of several weeks.  </p>
+
+<h2 id="device">Device</h2>
+<p>The Bash Bunny looks like a standard USB device with a switch and an LED light. There are three modes by default on the Bash Bunny that are accessible via the switch on the side of the device. There are two ‘attack modes’ (switch positions 1 &amp; 2), and the arming mode (switch position 3). By default, switch position 3, arming mode, is utilized to enable and manage serial and mass storage. Any modifications to the payloads in the switch 1 or 2 folders on the device will be conducted while the Bash Bunny is in arming mode. The following image, taken from the Hak5 wiki page for the Bash Bunny, illustrates the three switch positions. </p>
+<img src="./index_files/screenshots/hak5bashbunny.png" alt="Hak5 Bash Bunny picture indicating switch positions" height="250">
+<h3 id="additional-notes">Additional notes</h3>
+<p>(1)	While it is possible to configure switch position 3, arming mode to perform another payload when the device is plugged in, that functionality and configuration is outside the scope of this primer paper. (2) The Bash Bunny should be ejected and unplugged prior to changing the switch position on the device. For example, while in arming mode a payload is added to the switch position one folder--the device should be ejected from the computer, unplugged, switch changed to switch position 1, then plugged back into the computer. (3) Do not edit payloads directly on/from the Bash Bunny. Copy and paste the files to be edited onto your local machine.</p>
+
+
+<h2 id="setup">Setup</h2>
+<p>As a dynamic attack platform, the Bash Bunny may be viewed as complex and the operation of the device as overwhelming to any who have not previously configured or utilized the device. The steps below should be taken in order to configure the Bash Bunny. </p>
+
+<h3 id="setup-update">Initial Setup &amp; Update</h3>
+
+<ol>
+  <li value="1"> Plug Bash Bunny into computer while in arming mode (switch position 3). </li>
+  <li value="2"> Navigate to the downloads section at the Hak5 site at the following url: https://downloads.hak5.org/bunny</li>
+  <li value="3"> Scroll down to the section titled “Bash Bunny Tools” and download the corresponding version for your machine by pressing the cloud download button. </li>
+    <ul>
+      <li><img src="./index_files/screenshots/bashbunnytools.png" alt="Hak5 Bash Bunny tools download screenshot" height="250"></li>
+      <li>When the popup window appears select “Save File.” If you have previously elected to automatically perform the action of saving skip this step. </li>
+    </ul>
+  <li value="4">Navigate to your Downloads and select the file that was just downloaded. Extract all to the root of the Bash Bunny. Do not nest the extraction within any folders. </li>
+  <li value="5">From the Bash Bunny, double click to run ‘bunnyupdater.exe.’ The executable should have a red circle as the icon.  </li>
+    <img src="./index_files/screenshots/bunnyupdater.png" alt="Bash Bunny directory to show bunnyupdater" height="300">
+
+  <li value="6"> When you click on the executable, a new popup window will open. There is one option--Press ‘0’ and Press ‘Enter.’ Bunnyupdater will run and update your device. Do not unplug or otherwise modify your device or device contents after beginning the update. </li>
+    <img src="./index_files/screenshots/bunnyupdater_start.png" alt="Bash Bunny directory to show bunnyupdater initial screen" height="300">
+
+  <li value="7">When the download is complete (the display screen will say when the update is complete), eject the Bash Bunny, unplug, and replug the device into the computer (still in switch position 3). The device may require further update. </li>
+    <ul>
+      <li>The device will have a solid blue flash if no updates are being performed. </li>
+    </ul>
+  <li value="8">If no updates are being performed after the device is plugged in, run the bunnyupdater again. Running the bunnyupdater again will update and sync the GitHub repository. When the updater is finished, the window should look like the following: </li>
+    <img src="./index_files/screenshots/bunnyupdater_finish.png" alt="Bash Bunny directory to show bunnyupdater final screen" height="300">
+
+  <li value="9">At this point, the Bash Bunny should be up-to-date. The bunnyupdater may be run periodically to ensure the firmware and included payload repository are up-to-date. It is important to remember not to disconnect the Bash Bunny during an update. </li>
+</ol>
+
+<h3 id="version-verification">Version Verification</h3>
+<p>	As of the writing of this primer, the Bash Bunny is on version 1.6. To check your version, select the ‘version’ text file from the device and ensure that your device has updated to the most recent with the bunnyupdater. You may cross-reference the firmware version with the most recent from the Hak5 Downloads page in the section titled “Bash Bunny Firmware.” </p>
+<img src="./index_files/screenshots/version.png" alt="Example version.txt file on Bash Bunny" height="230">
+<br>
+<img src="./index_files/screenshots/firmware.png" alt="Bash Bunny firmware example for comparison" height="250">
+
+<h3 id="share-internet">Share Internet</h3>
+<p>	Sharing internet from the host machine to the Bash Bunny will allow you to install third party software which will greatly enhance the functionality of the Bash Bunny. Follow the steps below to setup internet sharing with the Bash Bunny: </p>
+<ol>
+  <li value="1">Create a new plain-text file setting the ATTACKMODE to RNDIS_ETHERNET. 	 </li>
+    <ul>
+      <li>Optionally, you can set the LED to one of the various colors or for default, for example, setting LED G SOLID will display a solid green LED color. </li>
+    </ul>
+  <li value="2">Save the text file as “payload.txt.”  </li>
+  <li value="3">With the Bash Bunny in arming mode (switch position 3), copy and paste the “payload.txt” previously created into the folder for switch 1. Access switch1 folder by selecting ‘payloads’ from root then selecting ‘switch1.’ </li>
+          <img src="./index_files/screenshots/switch1.png" alt="Initial payload to set ATTACKMODE" height="200">
+
+  <li value="4">Eject and unplug the Bash Bunny. Change the switch to position 1 and plug the Bash Bunny back into the computer.  </li>
+  <li value="5">From the Windows search bar, type “ncpa.cpl” and press enter. </li>
+    <img src="./index_files/screenshots/ncpa.png" alt="ncpa example" height="45">
+
+  <li value="6">Identify the Bash Bunny, which may look similar to the following: </li>
+    <img src="./index_files/screenshots/ethernet4.png" alt="ethernet example" height="80">
+  <li value="7">Right-click on your personal active Internet interface and click “Properties.” </li>
+  <li value="8">Select the ‘Sharing’ tab and check the box to “Allow other network users to connect through this computer’s internet connection.” Ensure that the Bash Bunny is selected from the drop-down menu. </li>
+    <img src="./index_files/screenshots/ethernetsharing.png" alt="ethernet sharing example" height="230">
+  <li value="9">Select ‘OK’ and close the menu. </li>
+  <li>Right-click on the Bash Bunny Ethernet interface (In this example Ethernet 4) and select “Properties.” </li>
+    <img src="./index_files/screenshots/ethernetproperties.png" alt="ethernet properties example" height="200">
+  <li>Click “Internet Protocol Version 4 (TCP/IPv4)” and Click “Properties.”  </li>
+  <li value="12">Change the IP address in the field to “172 . 16 . 64 . 64.” Leave the subnet mask as “255 . 255 . 255 . 0.” </li>
+  <img src="./index_files/screenshots/ipv4.png" alt="ethernet properties ipv4 settings example" height="250">
+  <li value="13">Click “OK” on the IPv4 Properties page and close the Ethernet Properties page as internet connection sharing is enabled.   </li>
+</ol>
+
+<h3 id="install-utilities">Install Utilities (Optional)</h3>
+<p>	For more advanced payloads, additional tools may be required to run the payloads. To install the utilities, follow the directions below: </p>
+<ol>
+  <li>Navigate to the forums at Hak5.  </li>
+    <ul>
+      <li>https://forums.hak5.org/topic/40971-info-tools/</li>
+    </ul>
+  <li value="2">From the pinned post at the top of the forum, download the .deb files. </li>
+  <li>With the Bash Bunny in switch position 3, arming mode, insert the Bash Bunny into the computer. Copy the .deb files downloaded in step 2 into the /tools/ folder on the Bash Bunny. </li>
+  <li>Unplug the Bash Bunny and reinsert the device into the computer, leaving the Bash Bunny in switch position 3. The solid magenta LED indicates that updates are in progress. </li>
+  <li value="5">Load a payload with ATTACKMODE RNDIS_ETHERNET into switch1 then eject and unplug the device.  </li>
+  <li>Access the Shell through PuTTY or another terminal emulator and perform updates by running the following commands: </li>
+    <ul>
+      <li>apt-get update</li>
+      <li>apt-get upgrade</li>
+    </ul>
+</ol>
+
+<h3 id="download-putty">Download PuTTY (Optional)</h3>
+<p>	The following instructions guide the user through downloading PuTTY, a terminal emulator and is necessary to SSH into the Bash Bunny. If you already have PuTTY installed, you should skip this section; alternatively, if you have another terminal emulator that you are familiar with, you may utilize that instead.</p>
+<ol>
+  <li value="1">Navigate to the website https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html and select appropriate package manager for your machine.  </li>
+    <ul>
+      <li>If unsure whether your device is 32 or 64-bit, search “about” in the device explorer and select “About your PC.” Scroll down and review the “System type” under ‘Device specifications.’ </li>
+        <img src="./index_files/screenshots/systemtype.png" alt="system type example" height="30">
+    </ul>
+  <li value="2">Save the Windows Installer Package. </li>
+  <li>Navigate to the Downloads section and run the Installer Package following the installer prompts. </li>
+</ol>
+
+<h3 id="connect-to-putty">Connect to Bash Bunny via PuTTY (Optional)</h3>
+<p>	PuTTY is a free, open source terminal emulator that supports several different network protocols including secure shell (SSH). By connecting to the Bash Bunny through SSH you may install third party software which will greatly enhance the functionality of the Bash Bunny. To connect to the Bash Bunny via SSH, follow the steps below: </p>
+<ol>
+  <li value="1">Follow Steps 1-4 from the Share Internet section above to prepare the Bash Bunny.  </li>
+  <li>Open PuTTY.  </li>
+  <li>From the very top option on the left column, Session, input the static IP address that we established in the previous section (172.16.64.1). </li>
+    <img src="./index_files/screenshots/puttyconfig.png" alt="PuTTY configuration" height="350">
+  <li value="4">Press ‘Open.’ </li>
+  <li>Login as: root </li>
+  <li>The default password for the Bash Bunny is “hak5bunny.”  </li>
+      <img src="./index_files/screenshots/puttylogin.png" alt="PuTTY login screen" height="300">
+</ol>
+
+<h2 id="assignment-instructions">Assignment - USB Simple Extraction</h2>
+<p>	There are several different categories that payloads may fall into. Often, penetration testing involves the exfiltration of critical sensitive data from a company computer. The payload outlined herein, shared in the Hak5 GitHub repository by author DanTheGoodman, should be included in the payloads downloaded and readily available on the device. </p>
+
+<h3 id="assignment-instructions-copy-run-payload">Assignment Instructions - Copy &amp; Run Payload</h3>
+<ol>
+  <li value="1">With the Bash Bunny in switch position 3, arming mode, insert the Bash Bunny into the computer.  </li>
+  <li>Navigate to BashBunny/payloads/library/exfiltration/simple-usb-extractor. </li>
+  <li>Select and copy all of the files (five) from within ‘simple-usb-extractor.’ </li>
+      <img src="./index_files/screenshots/usbextractor.png" alt="usbextractor contents" height="200">
+  <li value="4">Navigate to BashBunny/payloads/switch1. </li>
+  <li>Delete any current files from within switch1.  </li>
+  <li>Paste the files you previously copied from ‘simple-usb-extractor.’  </li>
+  <li>Eject and unplug the Bash Bunny from the computer. </li>
+  <li>Change the Bash Bunny to switch position 1 and plug the device into the computer.  </li>
+    <ul>
+      <li>Do not touch the keyboard or mouse or you may interfere and cause the payload to fail. </li>
+    </ul>
+  <li value="9">At the end of the attack, the ATTACKMODE will change to STORAGE. From the main directory, navigate to loot/USB_Exfiltration. The folder within USB_Exfiltration will change based on the computer name and time the payload was run. </li>
+    <ul>
+      <li>a.	Inside the folder should be PDF and Microsoft Word documents that were saved within Desktop, Downloads, or Documents on the computer the payload was run. </li>
+    </ul>
+</ol>
+
+<h3 id="assignment-instructions-edit-payload">Assignment Instructions - Edit Payload</h3>
+<ol>
+  <li value="1">Copy and paste the contents of ‘usb-simple-exfiltration’ to a directory of your choosing on your local device. </li>
+  <li>To edit Windows Command Script, Right-click and select Edit on the Windows Command Script titled “x.”  </li>
+  <li>Review the code. Duplicate a line of the xcopy command and add a new file extension, example below. </li>
+    <img src="./index_files/screenshots/editpayload.png" alt="edit payload example" height="60">
+  <li>Add xcopy commands to round out and widen the variety of files that may be extracted with the Bash Bunny. </li>
+    <ul>
+      <li>Pay attention to the differences searching within Desktop, Documents, and Downloads and ensure the commands are adjusted appropriately. </li>
+    </ul>
+</ol>
+
+<h2 id="payload-development">Payload Development (Optional)</h2>
+<p>	A condensed guide on syntax for payload development may be found at the Bash Bunny wiki at https://wiki.bashbunny.com/#!payload_development.md. Information on the wiki about Bunny Scripts include that of ATTACKMODE and ATTACKMODE combinations, LEDs (colors, patterns, &amp; states), QUACK command, as well as a best practice and style guide for development. </p>
+<p>	Alternatively, the Hak5 website, located at https://docs.hak5.org/hc/en-us/categories/360000982534-Bash-Bunny, provides additional documentation separated by category. </p>
+
+<h2 id="starter-code">Starter Code</h2>
+<p>	The original code set has been archived and is available should the code utilized by author DanTheGoodman be edited, removed, or otherwise unavailable to the student. </p>
+
+<h2 id="grading">Model Grading Criteria</h2>
+<p>	Upon successful completion of this assignment the student’s program should exfiltrate specified file types from different locations on the computer to a loot folder located on the Bash Bunny. The student should have expanded or elsewise modified the given code to perform the specified actions and be able to generally explain how the payload operates. </p>
+
+<h2 id="additional-info">Additional Information</h2>
+<p>	For more information about the Bash Bunny, the following community resources may be useful:  </p>
+<ul>
+  <li>Hak5 site directory for Bash Bunny (https://shop.hak5.org/products/bash-bunny</li>
+  <li>Bash Bunny wiki (https://wiki.bashbunny.com/#!index.md)</li>
+  <li>Hak5 Bash Bunny Forums (https://forums.hak5.org/forum/92-bash-bunny/)  </li>
+  <li>Hak5 GitHub community payloads (https://github.com/hak5/bashbunny-payloads)  </li>
+</ul>
+<a href="#toc_container">Return to Top</a>
+
+    </div>
+    <script src="./index_files/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+
+
+
+
+</body></html>
