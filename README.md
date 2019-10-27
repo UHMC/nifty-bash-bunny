@@ -37,6 +37,7 @@ This primer paper is written and intended to introduce high school seniors to th
 ## Device
 
 The Bash Bunny looks like a standard USB device with a switch and an LED light. There are three modes by default on the Bash Bunny that are accessible via the switch on the side of the device. There are two ‘attack modes’ (switch positions 1 & 2), and the arming mode (switch position 3). By default, switch position 3, arming mode, is utilized to enable and manage serial and mass storage. Any modifications to the payloads in the switch 1 or 2 folders on the device will be conducted while the Bash Bunny is in arming mode. The following image, taken from the Hak5 wiki page for the Bash Bunny, illustrates the three switch positions.
+
 ![Hak5 image of Bash bunny](index_files/screenshots/hak5bashbunny.png)
 ### Additional Notes
 
