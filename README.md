@@ -41,7 +41,7 @@ The Bash Bunny looks like a standard USB device with a switch and an LED light. 
 ### Additional Notes
 
 (1)	While it is possible to configure switch position 3, arming mode to perform another payload when the device is plugged in, that functionality and configuration is outside the scope of this primer paper. (2) The Bash Bunny should be ejected and unplugged prior to changing the switch position on the device. For example, while in arming mode a payload is added to the switch position one folder--the device should be ejected from the computer, unplugged, switch changed to switch position 1, then plugged back into the computer. (3) Do not edit payloads directly on/from the Bash Bunny. Copy and paste the files to be edited onto your local machine.
-![Hak5 image of Bash bunny](screenshots/hak5bashbunny.png)
+![Hak5 image of Bash bunny](index_files/screenshots/hak5bashbunny.png)
 
 ## Setup
 
@@ -51,23 +51,23 @@ As a dynamic attack platform, the Bash Bunny may be viewed as complex and the op
 1.	Plug Bash Bunny into computer while in arming mode (switch position 3).
 2.	Navigate to the downloads section at the Hak5 site at the following url: https://downloads.hak5.org/bunny
 3.	Scroll down to the section titled “Bash Bunny Tools” and download the corresponding version for your machine by pressing the cloud download button.
-  * ![Bash Bunny Tools](screenshots/bashbunnytools.png)
+  * ![Bash Bunny Tools](index_files/screenshots/bashbunnytools.png)
   *  When the popup window appears select “Save File.” If you have previously elected to automatically perform the action of saving skip this step.
 4.	Navigate to your Downloads and select the file that was just downloaded. Extract all to the root of the Bash Bunny. Do not nest the extraction within any folders.
 5.	From the Bash Bunny, double click to run ‘bunnyupdater.exe.’ The executable should have a red circle as the icon.
-  * ![Bash Bunny directory to show bunny updater](screenshots/bunnyupdater.png)
+  * ![Bash Bunny directory to show bunny updater](index_files/screenshots/bunnyupdater.png)
 6.	When you click on the executable, a new popup window will open. There is one option--Press ‘0’ and Press ‘Enter.’ Bunnyupdater will run and update your device. Do not unplug or otherwise modify your device or device contents after beginning the update.
-  * ![Start of Bunnyupdater](screenshots/bunnyupdater_start.png)
+  * ![Start of Bunnyupdater](index_files/screenshots/bunnyupdater_start.png)
 7.	When the download is complete (the display screen will say when the update is complete), eject the Bash Bunny, unplug, and replug the device into the computer (still in switch position 3). The device may require further update.
   * The device will have a solid blue flash if no updates are being performed.
 8.	If no updates are being performed after the device is plugged in, run the bunnyupdater again. Running the bunnyupdater again will update and sync the GitHub repository. When the updater is finished, the window should look like the following:
-  * ![Bunnyupdater finish](screenshots/bunnyupdater_finish.png)
+  * ![Bunnyupdater finish](index_files/screenshots/bunnyupdater_finish.png)
 9.	At this point, the Bash Bunny should be up-to-date. The bunnyupdater may be run periodically to ensure the firmware and included payload repository are up-to-date. It is important to remember not to disconnect the Bash Bunny during an update.
 
 ### Version Verification
 As of the writing of this primer, the Bash Bunny is on version 1.6. To check your version, select the ‘version’ text file from the device and ensure that your device has updated to the most recent with the bunnyupdater. You may cross-reference the firmware version with the most recent from the Hak5 Downloads page in the section titled “Bash Bunny Firmware.”
-  * ![Firmware version](screenshots/version.png)
-  * ![Firmware version-2](screenshots/firmware.png)
+  * ![Firmware version](index_files/screenshots/version.png)
+  * ![Firmware version-2](index_files/screenshots/firmware.png)
 
 ### Share Internet
 
@@ -77,21 +77,21 @@ Sharing internet from the host machine to the Bash Bunny will allow you to insta
   * Optionally, you can set the LED to one of the various colors or for default, for example, setting LED G SOLID will display a solid green LED color.
 2.	Save the text file as “payload.txt.”
 3.	With the Bash Bunny in arming mode (switch position 3), copy and paste the “payload.txt” previously created into the folder for switch 1. Access switch1 folder by selecting ‘payloads’ from root then selecting ‘switch1.’
-  * ![Switch1](screenshots/switch1.png)
+  * ![Switch1](index_files/screenshots/switch1.png)
 4.	Eject and unplug the Bash Bunny. Change the switch to position 1 and plug the Bash Bunny back into the computer.
 5.	From the Windows search bar, type “ncpa.cpl” and press enter.
-  * ![ncpa](screenshots/ncpa.png)
+  * ![ncpa](index_files/screenshots/ncpa.png)
 6.	Identify the Bash Bunny, which may look similar to the following:
-  * ![ethernet4](screenshots/ethernet4.png)
+  * ![ethernet4](index_files/screenshots/ethernet4.png)
 7.	Right-click on your personal active Internet interface and click “Properties.”
 8.	Select the ‘Sharing’ tab and check the box to “Allow other network users to connect through this computer’s internet connection.” Ensure that the Bash Bunny is selected from the drop-down menu.
-  * ![ethernetsharing](screenshots/ethernetsharing.png)
+  * ![ethernetsharing](index_files/screenshots/ethernetsharing.png)
 9.	Select ‘OK’ and close the menu.
 10.	Right-click on the Bash Bunny Ethernet interface (In this example Ethernet 4) and select “Properties.”
-  * ![ethernetproperties](screenshots/ethernetproperties.png)
+  * ![ethernetproperties](index_files/screenshots/ethernetproperties.png)
 11.	Click “Internet Protocol Version 4 (TCP/IPv4)” and Click “Properties.”
 12.	Change the IP address in the field to “172 . 16 . 64 . 64.” Leave the subnet mask as “255 . 255 . 255 . 0.”
-  * ![ipv4](screenshots/ipv4.png)
+  * ![ipv4](index_files/screenshots/ipv4.png)
 13.	Click “OK” on the IPv4 Properties page and close the Ethernet Properties page as internet connection sharing is enabled.  
 
 ### Install Utilities (Optional)
@@ -114,7 +114,7 @@ The following instructions guide the user through downloading PuTTY, a terminal 
 
 1.	Navigate to the website https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html and select appropriate package manager for your machine.
   * If unsure whether your device is 32 or 64-bit, search “about” in the device explorer and select “About your PC.” Scroll down and review the “System type” under ‘Device specifications.’
-  * [systemtype](screenshots/systemtype.png)
+  * [systemtype](index_files/screenshots/systemtype.png)
 2.	Save the Windows Installer Package.
 3.	Navigate to the Downloads section and run the Installer Package following the installer prompts.
 
@@ -125,11 +125,11 @@ PuTTY is a free, open source terminal emulator that supports several different n
 1.	Follow Steps 1-4 from the Share Internet section above to prepare the Bash Bunny.
 2.	Open PuTTY.
 3.	From the very top option on the left column, Session, input the static IP address that we established in the previous section (172.16.64.1).
-  * ![Putty configuration](screenshots/puttyconfig.png)
+  * ![Putty configuration](index_files/screenshots/puttyconfig.png)
 4.	Press ‘Open.’
 5.	Login as: root
 6.	The default password for the Bash Bunny is “hak5bunny.”
-  * ![Putty connection](screenshots/puttylogin.png)
+  * ![Putty connection](index_files/screenshots/puttylogin.png)
 
 ## Assignment - USB Simple Extraction
 
@@ -140,7 +140,7 @@ There are several different categories that payloads may fall into. Often, penet
 1.	With the Bash Bunny in switch position 3, arming mode, insert the Bash Bunny into the computer.
 2.	Navigate to BashBunny/payloads/library/exfiltration/simple-usb-extractor.
 3.	Select and copy all of the files (five) from within ‘simple-usb-extractor.’
-  * ![usb extractor](screenshot/usbextractor.png)
+  * ![usb extractor](index_files/screenshots/usbextractor.png)
 4.	Navigate to BashBunny/payloads/switch1.
 5.	Delete any current files from within switch1.
 6.	Paste the files you previously copied from ‘simple-usb-extractor.’
@@ -155,7 +155,7 @@ There are several different categories that payloads may fall into. Often, penet
 1.	Copy and paste the contents of ‘usb-simple-exfiltration’ to a directory of your choosing on your local device.
 2.	To edit Windows Command Script, Right-click and select Edit on the Windows Command Script titled “x.”
 3.	Review the code. Duplicate a line of the xcopy command and add a new file extension, example below.
-  * ![edit payload](screenshots/editpayload.png)
+  * ![edit payload](index_files/screenshots/editpayload.png)
 4.	Add xcopy commands to round out and widen the variety of files that may be extracted with the Bash Bunny.
   * Pay attention to the differences searching within Desktop, Documents, and Downloads and ensure the commands are adjusted appropriately.
 
